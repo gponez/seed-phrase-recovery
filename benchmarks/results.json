@@ -1,0 +1,73 @@
+{
+  "measured_at_utc": "2026-10-29T11:50:56.885237+00:00",
+  "python": "3.12.14",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "cpu": "Apple M5 Pro",
+  "repeats": 3,
+  "method": "One process; ordered prefix of 2-missing-word public zero-entropy fixtures; no file I/O; interpreted original algorithm, not compiled Cython.",
+  "results": [
+    {
+      "words": 12,
+      "missing_positions_1_based": [
+        11,
+        12
+      ],
+      "checked": 1048576,
+      "checksum_valid": 65536,
+      "output_sha256": "ddcf8517af9a9411b1a6fb1bcc1017adf2300fbc69bd62d453f95844458d94cb",
+      "implementations": {
+        "original_algorithm_python": {
+          "seconds": [
+            8.124229208013276,
+            8.295547082991106,
+            8.222609999997076
+          ],
+          "median_seconds": 8.222609999997076,
+          "candidates_per_second": 127523.49922960871
+        },
+        "packed_bits": {
+          "seconds": [
+            0.3340554579917807,
+            0.3314878339879215,
+            0.34028124998440035
+          ],
+          "median_seconds": 0.3340554579917807,
+          "candidates_per_second": 3138927.908269051
+        }
+      },
+      "speedup": 24.614505775263787
+    },
+    {
+      "words": 24,
+      "missing_positions_1_based": [
+        23,
+        24
+      ],
+      "checked": 1048576,
+      "checksum_valid": 4096,
+      "output_sha256": "d95729894f13135fe7cf08055c4404980dead1e6b648415fe6d2634e46d76967",
+      "implementations": {
+        "original_algorithm_python": {
+          "seconds": [
+            9.408406374976039,
+            9.449570333003066,
+            9.41535495899734
+          ],
+          "median_seconds": 9.41535495899734,
+          "candidates_per_second": 111368.71679999464
+        },
+        "packed_bits": {
+          "seconds": [
+            0.3347682499734219,
+            0.33645270799752325,
+            0.3366169579967391
+          ],
+          "median_seconds": 0.33645270799752325,
+          "candidates_per_second": 3116562.818711862
+        }
+      },
+      "speedup": 27.98418540018602
+    }
+  ],
+  "cpu_metadata_source": "sysctl -n machdep.cpu.brand_string (read separately with host access)"
+}

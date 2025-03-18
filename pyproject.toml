@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seed-phrase-recovery"
+version = "1.0.0"
+description = "Offline recovery of checksum-valid English BIP39 missing-word candidates"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+seed-recovery = "seed_recovery.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["seed_recovery*"]
+
+[tool.setuptools.package-data]
+seed_recovery = ["english.txt"]
