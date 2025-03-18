@@ -47,4 +47,4 @@ Tests cover official vectors, an independent BIP39 implementation, every support
 
 ## Sources
 
-English word list and public vectors: [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and [python-mnemonic](https://github.com/trezor/python-mnemonic), MIT; see [third-party license](THIRD_PARTY_LICENSES.txt).
+English word list and public vectors: [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and [python-mnemonic](https://github.com/trezor/python-mnemonic).

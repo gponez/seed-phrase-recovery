@@ -16,4 +16,4 @@ seed-recovery = "seed_recovery.__main__:main"
 include = ["seed_recovery*"]
 
 [tool.setuptools.package-data]
-seed_recovery = ["english.txt"]
+seed_recovery = ["english.txt", "NOTICE"]
