@@ -25,6 +25,14 @@ For your own phrase, omit `--phrase-file` to enter it without echo. Candidates s
 
 The search contains `2048 ** missing_words` combinations. Each run checks at most **1,000,000**; change `--limit` as needed. Repeat the same command with `--resume` to continue. Checkpoints verify the input and output, reject changed files, and safely repeat interrupted batches. Existing output is never overwritten by a fresh run.
 
+## Final phrase validation (external)
+
+[BTCRecover](https://github.com/3rdIteration/btcrecover) (`btcrecover-master`) supports seed recovery against known wallet addresses or an address database; see its [address-database guide](https://docs.btcrecover.org/en/latest/Creating_and_Using_AddressDB/).
+
+This project's intended transaction-history check requires **BigQuery**: filter the Bitcoin transactions dataset to the chosen timeframe, export the participating addresses, then compare candidate-derived addresses locally using the correct derivation paths and address range. Keep seed phrases and private keys local; only transaction/address data belongs in BigQuery.
+
+Address derivation, BigQuery queries, and database import/merge/lookups are **not included in this release**. A match establishes activity for a derived address in that dataset and period; confirm it against your known wallet history before accepting the phrase. No match can also mean incomplete data or an unsearched derivation path/address range.
+
 ## Verify
 
 ```sh
